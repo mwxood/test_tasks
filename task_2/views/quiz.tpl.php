@@ -9,6 +9,7 @@
                         echo $_SESSION['error'];
                         unset($_SESSION['error']);
                     ?>
+                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             <?php endif; ?>
 
@@ -18,6 +19,7 @@
                         echo $_SESSION['success'];
                        unset($_SESSION['success']);
                     ?>
+                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             <?php endif; ?>
             <form class="mt-5" method="post">

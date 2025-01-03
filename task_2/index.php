@@ -27,7 +27,7 @@
         $data = Helpers::load(['question-1', 'question-2', 'question-3']);
 
         $v = new V($data);
-        Helpers::dump($data);
+       // Helpers::dump($data);
 
         $v->rules([
             'required' => ['question-1', 'question-2', 'question-3'],

@@ -12,7 +12,7 @@
     use Valitron\Validator as V;
     V::lang('en'); 
 
-    if($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
         $data = Helpers::load(['question-1', 'question-2', 'question-3']);
 
         $v = new V($data);
